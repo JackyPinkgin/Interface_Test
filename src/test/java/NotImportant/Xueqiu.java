@@ -1,3 +1,4 @@
+package NotImportant;
 
 import org.junit.jupiter.api.Test;
 

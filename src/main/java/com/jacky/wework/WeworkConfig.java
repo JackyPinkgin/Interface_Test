@@ -1,3 +1,5 @@
+package com.jacky.wework;
+
 /**
  * @author 80230531
  * @date 2022/4/25 18:35
@@ -14,5 +16,9 @@ public class WeworkConfig {
             weworkConfig = new WeworkConfig();
         }
         return weworkConfig;
+    }
+
+    public static void load(String path){
+        // TODO: 2022/4/25 read from yaml or json 
     }
 }

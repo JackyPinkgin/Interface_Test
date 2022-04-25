@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WeworkConfig.java" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="单例配置">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Wework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Taf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hgwz/testerhome/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hgwz/testerhome/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Baidu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Baidu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Xueqiu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Xueqiu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hgwz/testerhome/com/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Baidu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotImportant/Baidu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Xueqiu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotImportant/Xueqiu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,19 +50,40 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "fileTemplates"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.3058104"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestGetToken.testToken">
-    <configuration name="Baidu.testMp3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jacky.wework.contact" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DepartmentTest.list">
+    <configuration name="DepartmentTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Baidu" />
-      <option name="METHOD_NAME" value="testMp3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="list" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,8 +101,8 @@
     </configuration>
     <configuration name="Xueqiu.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Xueqiu" />
+      <option name="PACKAGE_NAME" value="NotImportant" />
+      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
       <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -83,8 +111,8 @@
     </configuration>
     <configuration name="Xueqiu.testSearch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Xueqiu" />
+      <option name="PACKAGE_NAME" value="NotImportant" />
+      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
       <option name="METHOD_NAME" value="testSearch2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -93,8 +121,8 @@
     </configuration>
     <configuration name="Xueqiu.testSearch3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Xueqiu" />
+      <option name="PACKAGE_NAME" value="NotImportant" />
+      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
       <option name="METHOD_NAME" value="testSearch3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -103,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentTest.list" />
         <item itemvalue="JUnit.TestGetToken.testToken" />
         <item itemvalue="JUnit.Xueqiu.testSearch2" />
         <item itemvalue="JUnit.Xueqiu.testSearch3" />
         <item itemvalue="JUnit.Xueqiu.testSearch" />
-        <item itemvalue="JUnit.Baidu.testMp3" />
       </list>
     </recent_temporary>
   </component>
@@ -119,8 +147,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650873961544</updated>
-      <workItem from="1650873965684" duration="6177000" />
+      <workItem from="1650873965684" duration="6469000" />
+      <workItem from="1650883655585" duration="2920000" />
     </task>
+    <task id="LOCAL-00001" summary="单例配置">
+      <created>1650883255065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650883255065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +173,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="单例配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="单例配置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
