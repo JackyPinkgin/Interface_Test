@@ -30,6 +30,7 @@ class DepartmentTest {
 
     @Test
     void create() {
-        department.create();
+        department.create("AppDevDept_1","8");
+        department.create("AppDevDept_1","8").then().body("errcode",equalTo(60008));
     }
 }

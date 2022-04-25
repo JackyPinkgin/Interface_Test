@@ -1,4 +1,5 @@
 import com.jacky.wework.Wework;
+import com.jacky.wework.WeworkConfig;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -15,7 +16,7 @@ public class TestGetToken {
     @Test
     void testToken(){
         Wework wework = new Wework();
-        String token = wework.getWeworkToken();
+        String token = wework.getWeworkToken(WeworkConfig.getInstance().contactSecret);
         assertThat(token,not(equalTo(null)));
     }
 
