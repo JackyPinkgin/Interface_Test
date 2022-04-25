@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="单例配置">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Wework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Taf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="稍微增加一些内容">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hgwz/testerhome/com/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Baidu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotImportant/Baidu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Xueqiu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotImportant/Xueqiu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650873961544</updated>
       <workItem from="1650873965684" duration="6469000" />
-      <workItem from="1650883655585" duration="2920000" />
+      <workItem from="1650883655585" duration="3879000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -157,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650883255065</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="稍微增加一些内容">
+      <created>1650890711289</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650890711289</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +173,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="单例配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="单例配置" />
+    <MESSAGE value="稍微增加一些内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="稍微增加一些内容" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
