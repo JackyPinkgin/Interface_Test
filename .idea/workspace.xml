@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="稍微增加一些内容">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="封装了查询部门的接口，修改了list接口参数多加了双引号的问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
@@ -62,7 +62,23 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest.list">
+  <component name="RunManager" selected="JUnit.DepartmentTest.create">
+    <configuration name="DepartmentTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DepartmentTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
@@ -84,16 +100,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestGetToken" />
       <option name="METHOD_NAME" value="testToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Xueqiu.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="NotImportant" />
-      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
-      <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentTest.create" />
         <item itemvalue="JUnit.DepartmentTest.list" />
         <item itemvalue="JUnit.TestGetToken.testToken" />
         <item itemvalue="JUnit.Xueqiu.testSearch2" />
         <item itemvalue="JUnit.Xueqiu.testSearch3" />
-        <item itemvalue="JUnit.Xueqiu.testSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650873961544</updated>
       <workItem from="1650873965684" duration="6469000" />
-      <workItem from="1650883655585" duration="3879000" />
+      <workItem from="1650883655585" duration="4519000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -154,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650890711289</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="封装了查询部门的接口，修改了list接口参数多加了双引号的问题">
+      <created>1650891533796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650891533796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="单例配置" />
     <MESSAGE value="稍微增加一些内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="稍微增加一些内容" />
+    <MESSAGE value="封装了查询部门的接口，修改了list接口参数多加了双引号的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装了查询部门的接口，修改了list接口参数多加了双引号的问题" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

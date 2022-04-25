@@ -11,14 +11,27 @@ import static io.restassured.RestAssured.given;
  */
 public class Department {
 
-    public Response list(String id){
+    public Response list(String id) {
         return given().log().all()
                 .param("access_token", Wework.getToken())
-                .param("id",id)
+                .param("id", id)
                 .when()
                 .get("https://qyapi.weixin.qq.com/cgi-bin/department/list")
                 .then().log().all()
                 .extract().response();
+    }
+
+    //
+    public Response create() {
+        return given().log().all().queryParam("access_token", Wework.getToken())
+                .when().body("{\n" +
+                        "   \"name\": \"互动娱乐部\",\n" +
+                        "   \"parentid\": 8,\n" +
+                        "   \"order\": 1,\n" +
+                        "   \"id\": 22\n" +
+                        "}")
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
+                .then().log().all().extract().response();
     }
 
 }
