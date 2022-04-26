@@ -12,6 +12,7 @@ import static org.hamcrest.CoreMatchers.hasItem;
  */
 class DepartmentTest {
     static Department department;
+    String random = String.valueOf(System.currentTimeMillis());
 
     @BeforeAll
     static void setUp() {
@@ -36,7 +37,12 @@ class DepartmentTest {
 
     @Test
     void create1() {
-        department.create1("HuDongYuLeBu",8).then().body("errmsg",equalTo("created"));
+        department.create1("王军HuDongYuLeBu"+random,8).then().body("errmsg",equalTo("created"));
+    }
+
+    @Test
+    void creste1WithChinese(){
+        department.create1("吉喆Department"+ random,1).then().body("errmsg",equalTo("created"));
     }
 
     @Test
@@ -55,5 +61,13 @@ class DepartmentTest {
     void update() {
         department.update(33,9).then()
                 .body("errmsg",equalTo("updated"));
+    }
+
+    @Test
+    void update2(){
+        int id = department.create1("JackyTest1", 8).then().statusCode(200)
+                .extract().path("id");
+        department.update(id,1).then().body("errmsg",equalTo("updated"));
+        department.delete(""+id);
     }
 }
