@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="封装了查询部门的接口，修改了list接口参数多加了双引号的问题">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/create.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="开始尝试添加部门">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/create1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/update.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Wework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Wework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/AllJavaProjects/rest-assured-demo/src/main/resources/data",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -64,6 +62,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AllJavaProjects\rest-assured-demo\src\main\resources\data" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -74,7 +75,7 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest.create">
+  <component name="RunManager" selected="JUnit.DepartmentTest.update">
     <configuration name="DepartmentTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
@@ -86,6 +87,38 @@
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
       <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentTest.create1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="create1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,31 +140,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetToken.testToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGetToken" />
-      <option name="METHOD_NAME" value="testToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Xueqiu.testSearch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="NotImportant" />
-      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
-      <option name="METHOD_NAME" value="testSearch2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Xueqiu.testSearch3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="NotImportant" />
-      <option name="MAIN_CLASS_NAME" value="NotImportant.Xueqiu" />
-      <option name="METHOD_NAME" value="testSearch3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DepartmentTest.create" />
+        <item itemvalue="JUnit.DepartmentTest.update" />
+        <item itemvalue="JUnit.DepartmentTest.delete" />
+        <item itemvalue="JUnit.DepartmentTest.create1" />
         <item itemvalue="JUnit.DepartmentTest.list" />
-        <item itemvalue="JUnit.TestGetToken.testToken" />
-        <item itemvalue="JUnit.Xueqiu.testSearch2" />
-        <item itemvalue="JUnit.Xueqiu.testSearch3" />
+        <item itemvalue="JUnit.DepartmentTest.create" />
       </list>
     </recent_temporary>
   </component>
