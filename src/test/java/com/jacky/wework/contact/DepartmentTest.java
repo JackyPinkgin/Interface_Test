@@ -1,5 +1,6 @@
 package com.jacky.wework.contact;
 
+import io.restassured.builder.ResponseSpecBuilder;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

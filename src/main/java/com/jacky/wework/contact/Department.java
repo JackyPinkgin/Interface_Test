@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 import java.io.*;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
 
 /**
  * @author 80230531
@@ -31,6 +32,7 @@ public class Department extends Contact {
         String body = JsonPath.parse(this.getClass().getResourceAsStream("/data/create.json"))
                 .set("$.name", name)
                 .set("$.parentid", parentid).jsonString();
+
 
         return requestSpecification
                 .body(body).when()
