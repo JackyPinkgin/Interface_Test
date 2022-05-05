@@ -1,6 +1,7 @@
 package com.jacky.wework.contact;
 
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -49,10 +50,12 @@ class DepartmentTest {
     @Test
     void delete() {
         //先增加
-        department.create1("HuDongYuLeBu",8)
-                .then().body("errmsg",equalTo("created"));
+        ValidatableResponse response = department.create1("HuDongYuLeBu", 8)
+                .then().body("errmsg", equalTo("created"));
+        Integer id = response.extract().path("id");
+
         //再删除
-        department.delete("34").then()
+        department.delete(id).then()
                 .body("errcode",equalTo(0))
                 .body("errmsg",equalTo("deleted"));
     }
@@ -69,6 +72,6 @@ class DepartmentTest {
         int id = department.create1("JackyTest1", 8).then().statusCode(200)
                 .extract().path("id");
         department.update(id,1).then().body("errmsg",equalTo("updated"));
-        department.delete(""+id);
+        department.delete(id);
     }
 }

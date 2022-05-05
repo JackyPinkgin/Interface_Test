@@ -54,9 +54,10 @@ public class Department extends Contact {
                 .then().log().all().extract().response();
     }
 
-    public Response delete(String id) {
-        return given().log().all()
-                .param("access_token", Wework.getToken()).param("id", id)
+    public Response delete(int id) {
+        reset();
+        return requestSpecification
+                .param("id", id)
                 .when()
                 .get("https://qyapi.weixin.qq.com/cgi-bin/department/delete")
                 .then().log().all()
