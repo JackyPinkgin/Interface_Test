@@ -11,6 +11,7 @@ import static io.restassured.RestAssured.given;
  * @date 2022/4/26 20:16
  */
 public class Contact extends Restful {
+    String random = String.valueOf(System.currentTimeMillis());
     public Contact() {
         reset();
     }

@@ -1,14 +1,15 @@
 package com.jacky.wework.contact;
 
 import com.jacky.wework.Wework;
+import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.io.*;
+import java.util.HashMap;
 
-import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
+import static io.restassured.RestAssured.*;
 
 /**
  * @author 80230531
@@ -18,7 +19,7 @@ public class Department extends Contact {
 
     public Response list(String id) {
 
-        Response response =  requestSpecification
+        Response response = requestSpecification
                 .queryParam("id", id)
                 .when()
                 .get("https://qyapi.weixin.qq.com/cgi-bin/department/list")
@@ -38,6 +39,17 @@ public class Department extends Contact {
                 .body(body).when()
                 .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
                 .then().log().all().extract().response();
+    }
+
+    public Response create(HashMap<String, Object> map) {
+        reset();
+        DocumentContext documentContext = JsonPath.parse(this.getClass().getResourceAsStream("/data/create.json"));
+        map.entrySet().forEach(entry -> {
+            documentContext.set(entry.getKey(), entry.getValue());
+        });
+        return requestSpecification.body(documentContext.jsonString())
+                .when().post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
+                .then().extract().response();
     }
 
     //用于个人使用的 创建部门方法
@@ -65,7 +77,7 @@ public class Department extends Contact {
                 .extract().response();
     }
 
-    public Response update(int id, int parentid){
+    public Response update(int id, int parentid) {
         reset();
         String body = JsonPath.parse(this.getClass().getResourceAsStream("/data/update.json"))
                 .set("$.id", id)
