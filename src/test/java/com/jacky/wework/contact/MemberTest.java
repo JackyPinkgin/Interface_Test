@@ -3,7 +3,10 @@ package com.jacky.wework.contact;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -22,15 +25,19 @@ class MemberTest {
         member = new Member();
     }
 
-    @Test
-    void create() {
+    @ParameterizedTest
+    @ValueSource(strings = {"Jacky_", "wangjun_", "testerhome_"})
+    void create(String name) {
+        String nameNew = name + member.random;
+        String random = String.valueOf(System.currentTimeMillis()).substring(5, 13);
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userid", "Jacky_" + member.random);
-        map.put("name", "Jacky_" + member.random);
-        map.put("mobile","189"+member.random.substring(0,8));
+        map.put("userid", nameNew);
+        map.put("name", nameNew);
+        map.put("mobile", "189" + random);
+        map.put("email", random + "@qq.com");
         map.put("department", 1);
-        map.put("biz_mail",null);
-        map.put("avatar_mediaid",null);
-        member.create(map).then().log().all().statusCode(200).body("errcode",equalTo(0));
+        map.put("biz_mail", null);
+        map.put("avatar_mediaid", null);
+        member.create(map).then().log().all().statusCode(200).body("errcode", equalTo(0));
     }
 }
