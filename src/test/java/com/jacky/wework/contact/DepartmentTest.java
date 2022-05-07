@@ -22,7 +22,10 @@ class DepartmentTest {
 
     @BeforeAll
     static void setUp() {
-        department = new Department();
+        if (department == null) {
+            department = new Department();
+        }
+        department.deleteAll();
     }
 
     @Test
@@ -57,21 +60,21 @@ class DepartmentTest {
     }
 
     @Test
-    void createByMap(){
-        HashMap<String,Object> map = new HashMap<String, Object>(){{
-            put("name","JackyJacky"+random);
-            put("parentid","1");
-            put("id",null);
+    void createByMap() {
+        HashMap<String, Object> map = new HashMap<String, Object>() {{
+            put("name", "JackyJacky" + random);
+            put("parentid", "1");
+            put("id", null);
         }};
         department.create(map).then()
-                .body("errcode",equalTo(0))
-                .body("errmsg",equalTo("created"));
+                .body("errcode", equalTo(0))
+                .body("errmsg", equalTo("created"));
 
     }
 
     @Test
     void create1() {
-        department.create1("王军HuDongYuLeBu" + random, 8).then().body("errmsg", equalTo("created"));
+        department.create1("王军HuDongYuLeBu" + random, 2).then().body("errmsg", equalTo("created"));
     }
 
     @Test
@@ -82,7 +85,7 @@ class DepartmentTest {
     @Test
     void delete() {
         //先增加
-        ValidatableResponse response = department.create1("HuDongYuLeBu", 8)
+        ValidatableResponse response = department.create1("HuDongYuLeBu", 1)
                 .then().body("errmsg", equalTo("created"));
         Integer id = response.extract().path("id");
 
@@ -95,15 +98,23 @@ class DepartmentTest {
 
     @Test
     void update() {
-        department.update(33, 9).then()
+        ValidatableResponse response = department.create1("ruanjianceshibu", 1)
+                .then().body("errmsg", equalTo("created"));
+        Integer id = response.extract().path("id");
+        department.update(id, 1).then()
                 .body("errmsg", equalTo("updated"));
     }
 
     @Test
     void update2() {
-        int id = department.create1("JackyTest1", 8).then().statusCode(200)
+        int id = department.create1("JackyTest1", 2).then().statusCode(200)
                 .extract().path("id");
         department.update(id, 1).then().body("errmsg", equalTo("updated"));
         department.delete(id);
+    }
+
+    @Test
+    void deleteAll() {
+        department.deleteAll();
     }
 }

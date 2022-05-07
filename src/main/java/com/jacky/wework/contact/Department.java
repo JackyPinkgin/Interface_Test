@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.*;
 
@@ -87,6 +88,14 @@ public class Department extends Contact {
                 .body(body).when()
                 .post("https://qyapi.weixin.qq.com/cgi-bin/department/update")
                 .then().log().all().extract().response();
+    }
+
+    public Response deleteAll() {
+        reset();
+        List<Integer> idList = list("").then().log().all().extract().path("department.id");
+        System.out.println(idList);
+        idList.forEach(id -> delete(id));
+        return null;
     }
 
 }

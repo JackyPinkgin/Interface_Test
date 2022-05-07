@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到89的18分钟，完成用户添加的功能">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到89的30min  完成用户添加用例">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/MemberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/MemberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +72,8 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MemberTest.create (1)">
-    <configuration name="DepartmentTest.createByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DepartmentTest">
+    <configuration name="DepartmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="createByMap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepartmentTest.list2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentTest.deleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="list2" />
+      <option name="METHOD_NAME" value="deleteAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentTest" />
+        <item itemvalue="JUnit.DepartmentTest.delete" />
+        <item itemvalue="JUnit.DepartmentTest.deleteAll" />
         <item itemvalue="JUnit.MemberTest.create (1)" />
         <item itemvalue="JUnit.MemberTest.create" />
-        <item itemvalue="JUnit.DepartmentTest.createByMap" />
-        <item itemvalue="JUnit.DepartmentTest.list2" />
-        <item itemvalue="JUnit.DepartmentTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,7 @@
       <workItem from="1650883655585" duration="4519000" />
       <workItem from="1650897914238" duration="782000" />
       <workItem from="1650898916420" duration="3200000" />
-      <workItem from="1651718773045" duration="12337000" />
+      <workItem from="1651718773045" duration="16548000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -225,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651753460689</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="看到89的30min  完成用户添加用例">
+      <created>1651808364210</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651808364210</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +257,8 @@
     <MESSAGE value="看到87. 解决了requestSpecification的初始化问题。" />
     <MESSAGE value="看到了88   修改delete方法参数，改为int。并且测试用例里用部门id关联create和delete" />
     <MESSAGE value="看到89的18分钟，完成用户添加的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到89的18分钟，完成用户添加的功能" />
+    <MESSAGE value="看到89的30min  完成用户添加用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到89的30min  完成用户添加用例" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
