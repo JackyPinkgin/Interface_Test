@@ -1,31 +1,22 @@
-package com.jacky.wework.contact;
-
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
 
 /**
  * @author 80230531
  * @date 2022/5/10 19:40
  */
-public class RestassuredTest {
+public class TestRestassured {
     public static RequestSpecification reqSpec = null;
     public static RequestSpecification build;
 
-    @BeforeAll
-    static void setUp() {
+    @Before
+    public void setUpClass() {
         RequestSpecBuilder reqSpecBuilder = new RequestSpecBuilder();
         reqSpecBuilder
                 .addCookie("hello", "jacky")
@@ -45,7 +36,7 @@ public class RestassuredTest {
     }
 
     @Test
-    void checkcheck() {
+    public void Testcheckcheck() {
         given()
                 .spec(reqSpec)
                 .log().all()

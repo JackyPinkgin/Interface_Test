@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到93的32min">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/RestassuredTest.java" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到94的7min  把RequestSepcBuilder弄明白了">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Testcheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/MemberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/MemberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/RestassuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRestassured.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="D:\software\apache-maven-3.8.4\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\ProgramFiles\apache-maven-3.8.5-bin\apache-maven-3.8.5\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -60,7 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "MavenSettings",
     "settings.editor.splitter.proportion": "0.3058104"
   }
 }]]></component>
@@ -78,94 +80,114 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RestassuredTest.checkcheck">
-    <configuration name="DepartmentTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestRestassured.Testcheckcheck">
+    <configuration name="TestRestassured.Testcheckcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="check" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRestassured" />
+      <option name="METHOD_NAME" value="Testcheckcheck" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepartmentTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRestassured.checkcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="list" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.MemberTest" />
-      <option name="METHOD_NAME" value="create(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestassuredTest.checkcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.RestassuredTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRestassured" />
       <option name="METHOD_NAME" value="checkcheck" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestassuredTest.testToolList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRestassured.testToolList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.RestassuredTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRestassured" />
       <option name="METHOD_NAME" value="testToolList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testcheck.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testcheck" />
+      <option name="METHOD_NAME" value="check" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.jacky.wework.contact in rest-assured-demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rest-assured-demo test" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+                <option value="-DMemberTest" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestRestassured.Testcheckcheck" />
+      <item itemvalue="JUnit.TestRestassured.checkcheck" />
+      <item itemvalue="JUnit.TestRestassured.testToolList" />
+      <item itemvalue="JUnit.Testcheck.check" />
+      <item itemvalue="JUnit.com.jacky.wework.contact in rest-assured-demo" />
+      <item itemvalue="Maven.rest-assured-demo test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RestassuredTest.checkcheck" />
-        <item itemvalue="JUnit.RestassuredTest.testToolList" />
-        <item itemvalue="JUnit.DepartmentTest.check" />
-        <item itemvalue="JUnit.MemberTest.create" />
-        <item itemvalue="JUnit.DepartmentTest.list" />
+        <item itemvalue="JUnit.TestRestassured.Testcheckcheck" />
+        <item itemvalue="JUnit.Testcheck.check" />
+        <item itemvalue="JUnit.com.jacky.wework.contact in rest-assured-demo" />
+        <item itemvalue="JUnit.TestRestassured.checkcheck" />
+        <item itemvalue="JUnit.TestRestassured.testToolList" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +206,7 @@
       <workItem from="1650883655585" duration="4519000" />
       <workItem from="1650897914238" duration="782000" />
       <workItem from="1650898916420" duration="3200000" />
-      <workItem from="1651718773045" duration="30754000" />
+      <workItem from="1651718773045" duration="34495000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -263,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652179273900</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="看到94的7min  把RequestSepcBuilder弄明白了">
+      <created>1652186576062</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652186576062</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +321,8 @@
     <MESSAGE value="看到89的45min" />
     <MESSAGE value="看到90的34min" />
     <MESSAGE value="看到93的32min" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到93的32min" />
+    <MESSAGE value="看到94的7min  把RequestSepcBuilder弄明白了" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到94的7min  把RequestSepcBuilder弄明白了" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

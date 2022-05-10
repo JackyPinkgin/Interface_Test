@@ -3,8 +3,8 @@ package com.jacky.wework.contact;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,11 +19,11 @@ import static org.hamcrest.Matchers.hasItems;
  * @author 80230531
  * @date 2022/4/25 20:33
  */
-class DepartmentTest {
+public class DepartmentTest {
     static Department department;
     String random = String.valueOf(System.currentTimeMillis());
 
-    @BeforeAll
+    @Before
     static void setUp() {
         if (department == null) {
             department = new Department();

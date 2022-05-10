@@ -1,6 +1,7 @@
 import com.jacky.wework.Wework;
 import com.jacky.wework.WeworkConfig;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
