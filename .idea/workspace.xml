@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到89的30min  完成用户添加用例">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到89的45min">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/demo.har.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +176,7 @@
       <workItem from="1650883655585" duration="4519000" />
       <workItem from="1650897914238" duration="782000" />
       <workItem from="1650898916420" duration="3200000" />
-      <workItem from="1651718773045" duration="16548000" />
+      <workItem from="1651718773045" duration="19017000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -232,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651808364210</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="看到89的45min">
+      <created>1651916744447</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651916744447</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +267,8 @@
     <MESSAGE value="看到了88   修改delete方法参数，改为int。并且测试用例里用部门id关联create和delete" />
     <MESSAGE value="看到89的18分钟，完成用户添加的功能" />
     <MESSAGE value="看到89的30min  完成用户添加用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到89的30min  完成用户添加用例" />
+    <MESSAGE value="看到89的45min" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到89的45min" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

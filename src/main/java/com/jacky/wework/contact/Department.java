@@ -90,6 +90,12 @@ public class Department extends Contact {
                 .then().log().all().extract().response();
     }
 
+    public Response update(HashMap<String, Object> map) {
+        return templateFromHar("demo.har.json.json",
+                "https://work.weixin.qq.com/wework_admin/party?action=addparty",
+                map);
+    }
+
     public Response deleteAll() {
         reset();
         List<Integer> idList = list("").then().log().all().extract().path("department.id");

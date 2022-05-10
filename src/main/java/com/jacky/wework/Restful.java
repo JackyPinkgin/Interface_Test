@@ -25,12 +25,26 @@ public class Restful {
         return requestSpecification.when().request("get", "baidu.com");
     }
 
-    public static String template(String path,HashMap<String,Object> map){
+    public static String template(String path, HashMap<String, Object> map) {
         DocumentContext documentContext = JsonPath.parse(Restful.class.getResourceAsStream(path));
         map.entrySet().forEach(entry -> {
             documentContext.set(entry.getKey(), entry.getValue());
         });
         return documentContext.jsonString();
+    }
+
+    public Response templateFromHar( String path, String pattern,HashMap<String, Object> map) {
+        //从har中读取请求，根据map进行更新
+        DocumentContext documentContext = JsonPath.parse(Restful.class.getResourceAsStream(path));
+        map.entrySet().forEach(entry -> {
+            documentContext.set(entry.getKey(), entry.getValue());
+        });
+
+        //下面两行是伪代码 没有实现的
+        String method = documentContext.read("method");
+        String url = documentContext.read("url");
+
+        return requestSpecification.when().request(method, url);
     }
 
 
