@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到90的34min">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到93的32min">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/RestassuredTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,8 +78,8 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest.list">
-    <configuration name="DepartmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RestassuredTest.checkcheck">
+    <configuration name="DepartmentTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
@@ -86,38 +89,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentTest.deleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="deleteAll" />
+      <option name="METHOD_NAME" value="check" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberTest.create (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
@@ -155,13 +127,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestassuredTest.checkcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.RestassuredTest" />
+      <option name="METHOD_NAME" value="checkcheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestassuredTest.testToolList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.RestassuredTest" />
+      <option name="METHOD_NAME" value="testToolList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestassuredTest.checkcheck" />
+        <item itemvalue="JUnit.RestassuredTest.testToolList" />
+        <item itemvalue="JUnit.DepartmentTest.check" />
+        <item itemvalue="JUnit.MemberTest.create" />
         <item itemvalue="JUnit.DepartmentTest.list" />
-        <item itemvalue="JUnit.DepartmentTest" />
-        <item itemvalue="JUnit.DepartmentTest.delete" />
-        <item itemvalue="JUnit.DepartmentTest.deleteAll" />
-        <item itemvalue="JUnit.MemberTest.create (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +184,7 @@
       <workItem from="1650883655585" duration="4519000" />
       <workItem from="1650897914238" duration="782000" />
       <workItem from="1650898916420" duration="3200000" />
-      <workItem from="1651718773045" duration="25215000" />
+      <workItem from="1651718773045" duration="30754000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -252,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652154123785</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="看到93的32min">
+      <created>1652179273900</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652179273900</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +291,8 @@
     <MESSAGE value="看到89的30min  完成用户添加用例" />
     <MESSAGE value="看到89的45min" />
     <MESSAGE value="看到90的34min" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到90的34min" />
+    <MESSAGE value="看到93的32min" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到93的32min" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

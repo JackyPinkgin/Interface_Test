@@ -1,5 +1,6 @@
 package com.jacky.wework.contact;
 
+import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.function.Consumer;
 
+import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.Matchers.hasItems;
@@ -36,7 +38,7 @@ class DepartmentTest {
                 .body("department[0].id", equalTo(1));
 
         department.list("").then().statusCode(200)
-                .body("department.id",hasItems(2));
+                .body("department.id", hasItems(2));
 //        department.list("8").then().statusCode(200)
 //                .body("department.name", hasItem("研发部"))
 //                .body("department.id[1]", equalTo(9));
@@ -120,5 +122,13 @@ class DepartmentTest {
     @Test
     void deleteAll() {
         department.deleteAll();
+    }
+
+    @Test
+    void check() {
+        given().log().all()
+                .get("http://10.177.95.73:8080/get_pv").then().log().all()
+                .statusCode(200)
+                .body("data.daily7PvList.find{it.id==132}.pv", equalTo(2));
     }
 }
