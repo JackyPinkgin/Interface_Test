@@ -11,6 +11,7 @@ import java.util.function.Consumer;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.hasItem;
+import static org.hamcrest.Matchers.hasItems;
 
 /**
  * @author 80230531
@@ -25,7 +26,7 @@ class DepartmentTest {
         if (department == null) {
             department = new Department();
         }
-        department.deleteAll();
+//        department.deleteAll();
     }
 
     @Test
@@ -33,6 +34,9 @@ class DepartmentTest {
         department.list("").then().statusCode(200)
                 .body("department.name", hasItem("Off_white"))
                 .body("department[0].id", equalTo(1));
+
+        department.list("").then().statusCode(200)
+                .body("department.id",hasItems(2));
 //        department.list("8").then().statusCode(200)
 //                .body("department.name", hasItem("研发部"))
 //                .body("department.id[1]", equalTo(9));
