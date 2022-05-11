@@ -1,0 +1,265 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "code",
+        "msg",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "type": "string",
+            "default": "",
+            "title": "The code Schema",
+            "examples": [
+                "2000"
+            ]
+        },
+        "msg": {
+            "type": "string",
+            "default": "",
+            "title": "The msg Schema",
+            "examples": [
+                ""
+            ]
+        },
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "daily7PvList",
+                "weekPv",
+                "allPv"
+            ],
+            "properties": {
+                "daily7PvList": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The daily7PvList Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "id",
+                            "date",
+                            "pv"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "integer",
+                                "title": "The id Schema",
+                                "examples": [
+                                    133,
+                                    132,
+                                    131,
+                                    130,
+                                    129,
+                                    128,
+                                    127
+                                ]
+                            },
+                            "date": {
+                                "type": "string",
+                                "title": "The date Schema",
+                                "examples": [
+                                    "2022-05-11",
+                                    "2022-05-10",
+                                    "2022-05-09",
+                                    "2022-05-07",
+                                    "2022-05-05",
+                                    "2022-04-28",
+                                    "2022-04-27"
+                                ]
+                            },
+                            "pv": {
+                                "type": "integer",
+                                "title": "The pv Schema",
+                                "examples": [
+                                    2,
+                                    3,
+                                    1,
+                                    5,
+                                    4
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "id": 133,
+                            "date": "2022-05-11",
+                            "pv": 2
+                        },
+                        {
+                            "id": 132,
+                            "date": "2022-05-10",
+                            "pv": 3
+                        },
+                        {
+                            "id": 131,
+                            "date": "2022-05-09",
+                            "pv": 1
+                        },
+                        {
+                            "id": 130,
+                            "date": "2022-05-07",
+                            "pv": 5
+                        },
+                        {
+                            "id": 129,
+                            "date": "2022-05-05",
+                            "pv": 1
+                        },
+                        {
+                            "id": 128,
+                            "date": "2022-04-28",
+                            "pv": 4
+                        },
+                        {
+                            "id": 127,
+                            "date": "2022-04-27",
+                            "pv": 2
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "id": 133,
+                            "date": "2022-05-11",
+                            "pv": 2
+                        },
+                        {
+                            "id": 132,
+                            "date": "2022-05-10",
+                            "pv": 3
+                        },
+                        {
+                            "id": 131,
+                            "date": "2022-05-09",
+                            "pv": 1
+                        },
+                        {
+                            "id": 130,
+                            "date": "2022-05-07",
+                            "pv": 5
+                        },
+                        {
+                            "id": 129,
+                            "date": "2022-05-05",
+                            "pv": 1
+                        },
+                        {
+                            "id": 128,
+                            "date": "2022-04-28",
+                            "pv": 4
+                        },
+                        {
+                            "id": 127,
+                            "date": "2022-04-27",
+                            "pv": 2
+                        }]
+                    ]
+                },
+                "weekPv": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The weekPv Schema",
+                    "examples": [
+                        18
+                    ]
+                },
+                "allPv": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The allPv Schema",
+                    "examples": [
+                        4407
+                    ]
+                }
+            },
+            "examples": [{
+                "daily7PvList": [{
+                    "id": 133,
+                    "date": "2022-05-11",
+                    "pv": 2
+                },
+                {
+                    "id": 132,
+                    "date": "2022-05-10",
+                    "pv": 3
+                },
+                {
+                    "id": 131,
+                    "date": "2022-05-09",
+                    "pv": 1
+                },
+                {
+                    "id": 130,
+                    "date": "2022-05-07",
+                    "pv": 5
+                },
+                {
+                    "id": 129,
+                    "date": "2022-05-05",
+                    "pv": 1
+                },
+                {
+                    "id": 128,
+                    "date": "2022-04-28",
+                    "pv": 4
+                },
+                {
+                    "id": 127,
+                    "date": "2022-04-27",
+                    "pv": 2
+                }],
+                "weekPv": 18,
+                "allPv": 4407
+            }]
+        }
+    },
+    "examples": [{
+        "code": "2000",
+        "msg": "",
+        "data": {
+            "daily7PvList": [{
+                "id": 133,
+                "date": "2022-05-11",
+                "pv": 2
+            },
+            {
+                "id": 132,
+                "date": "2022-05-10",
+                "pv": 3
+            },
+            {
+                "id": 131,
+                "date": "2022-05-09",
+                "pv": 1
+            },
+            {
+                "id": 130,
+                "date": "2022-05-07",
+                "pv": 5
+            },
+            {
+                "id": 129,
+                "date": "2022-05-05",
+                "pv": 1
+            },
+            {
+                "id": 128,
+                "date": "2022-04-28",
+                "pv": 4
+            },
+            {
+                "id": 127,
+                "date": "2022-04-27",
+                "pv": 2
+            }],
+            "weekPv": 18,
+            "allPv": 4407
+        }
+    }]
+}

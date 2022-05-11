@@ -3,7 +3,9 @@ package com.jacky.wework.contact;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.ValidatableResponse;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -23,16 +25,25 @@ public class DepartmentTest {
     static Department department;
     String random = String.valueOf(System.currentTimeMillis());
 
-    @Before
-    static void setUp() {
+    public DepartmentTest() {
+        System.out.println("构造方法");
+    }
+
+    @BeforeClass
+    public static void setUpBeforeClass() {
         if (department == null) {
             department = new Department();
         }
 //        department.deleteAll();
     }
 
+    @AfterClass
+    public static void tearDownAfterClass() {
+        System.out.println("after class");
+    }
+
     @Test
-    void list() {
+    public void list() {
         department.list("").then().statusCode(200)
                 .body("department.name", hasItem("Off_white"))
                 .body("department[0].id", equalTo(1));
@@ -60,13 +71,13 @@ public class DepartmentTest {
 //    }
 
     @Test
-    void create() {
+    public void create() {
         department.create("AppDevDept_1", "8");
         department.create("AppDevDept_1", "8").then().body("errcode", equalTo(60008));
     }
 
     @Test
-    void createByMap() {
+    public void createByMap() {
         HashMap<String, Object> map = new HashMap<String, Object>() {{
             put("name", "JackyJacky" + random);
             put("parentid", "1");
@@ -79,17 +90,17 @@ public class DepartmentTest {
     }
 
     @Test
-    void create1() {
+    public void create1() {
         department.create1("王军HuDongYuLeBu" + random, 2).then().body("errmsg", equalTo("created"));
     }
 
     @Test
-    void creste1WithChinese() {
+    public void creste1WithChinese() {
         department.create1("吉喆Department" + random, 1).then().body("errmsg", equalTo("created"));
     }
 
     @Test
-    void delete() {
+    public void delete() {
         //先增加
         ValidatableResponse response = department.create1("HuDongYuLeBu", 1)
                 .then().body("errmsg", equalTo("created"));
@@ -103,7 +114,7 @@ public class DepartmentTest {
 
 
     @Test
-    void update() {
+    public void update() {
         ValidatableResponse response = department.create1("ruanjianceshibu", 1)
                 .then().body("errmsg", equalTo("created"));
         Integer id = response.extract().path("id");
@@ -112,7 +123,7 @@ public class DepartmentTest {
     }
 
     @Test
-    void update2() {
+    public void update2() {
         int id = department.create1("JackyTest1", 2).then().statusCode(200)
                 .extract().path("id");
         department.update(id, 1).then().body("errmsg", equalTo("updated"));
@@ -120,15 +131,15 @@ public class DepartmentTest {
     }
 
     @Test
-    void deleteAll() {
+    public void deleteAll() {
         department.deleteAll();
     }
 
     @Test
-    void check() {
+    public void check() {
         given().log().all()
                 .get("http://10.177.95.73:8080/get_pv").then().log().all()
                 .statusCode(200)
-                .body("data.daily7PvList.find{it.id==132}.pv", equalTo(2));
+                .body("data.daily7PvList.find{it.id==132}.pv", equalTo(3));
     }
 }
