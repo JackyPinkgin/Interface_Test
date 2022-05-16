@@ -1,11 +1,14 @@
 package com.jacky.wework;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
@@ -34,7 +37,7 @@ public class Restful {
         return documentContext.jsonString();
     }
 
-    public Response templateFromHar( String path, String pattern,HashMap<String, Object> map) {
+    public Response templateFromHar(String path, String pattern, HashMap<String, Object> map) {
         //从har中读取请求，根据map进行更新
         DocumentContext documentContext = JsonPath.parse(Restful.class.getResourceAsStream(path));
         map.entrySet().forEach(entry -> {
@@ -46,6 +49,20 @@ public class Restful {
         String url = documentContext.read("url");
 
         return requestSpecification.when().request(method, url);
+    }
+
+    public Response templateFromYaml(String path, HashMap<String, Object> map) {
+        //todo：99集 1H22MIN 待完成优化
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        try {
+            return mapper.readValue(WeworkConfig.class.getResourceAsStream(path), WeworkConfig.class);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return null;
     }
 
 

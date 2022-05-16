@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="86课看完了。需要完成课后作业">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/WeworkConfig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/WeworkConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652190406791</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动">
+      <created>1652711938301</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652711938301</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +330,8 @@
     <MESSAGE value="看到93的32min" />
     <MESSAGE value="看到94的7min  把RequestSepcBuilder弄明白了" />
     <MESSAGE value="看到94的28min  初步明白了junit 4和5的区别，需要进一步了解junit怎么测试使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到94的28min  初步明白了junit 4和5的区别，需要进一步了解junit怎么测试使用" />
+    <MESSAGE value="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
