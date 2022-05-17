@@ -27,13 +27,13 @@ public class WeworkConfig {
         return weworkConfig;
     }
 
-    public static WeworkConfig load(String path){
+    public static WeworkConfig load(String path) {
         // fixed: 2022/4/25 read from yaml or json
 
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
 //        ObjectMapper mapper = new ObjectMapper(new JsonFactory());
         try {
-            return mapper.readValue(WeworkConfig.class.getResourceAsStream(path),WeworkConfig.class);
+            return mapper.readValue(WeworkConfig.class.getResourceAsStream(path), WeworkConfig.class);
 
 //            System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(WeworkConfig.getInstance()));
 //            System.out.println("--------------");

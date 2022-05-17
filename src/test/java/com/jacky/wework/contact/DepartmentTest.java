@@ -72,8 +72,9 @@ public class DepartmentTest {
 
     @Test
     public void create() {
-        department.create("AppDevDept_1", "8");
-        department.create("AppDevDept_1", "8").then().body("errcode", equalTo(60008));
+        department.create("AppDevDept_1", "1").then().log().all();
+        System.out.println("=================");
+        department.create("AppDevDept_1", "1").then().body("errcode", equalTo(60008));
     }
 
     @Test
@@ -82,6 +83,7 @@ public class DepartmentTest {
             put("name", "JackyJacky" + random);
             put("parentid", "1");
             put("id", null);
+            put("name_en","en"+random);
         }};
         department.create(map).then()
                 .body("errcode", equalTo(0))
@@ -115,7 +117,7 @@ public class DepartmentTest {
 
     @Test
     public void update() {
-        ValidatableResponse response = department.create1("ruanjianceshibu", 1)
+        ValidatableResponse response = department.create1("ruanjianceshibu", 2)
                 .then().body("errmsg", equalTo("created"));
         Integer id = response.extract().path("id");
         department.update(id, 1).then()
@@ -124,7 +126,7 @@ public class DepartmentTest {
 
     @Test
     public void update2() {
-        int id = department.create1("JackyTest1", 2).then().statusCode(200)
+        int id = department.create1("JackyTest1"+random, 2).then().statusCode(200)
                 .extract().path("id");
         department.update(id, 1).then().body("errmsg", equalTo("updated"));
         department.delete(id);

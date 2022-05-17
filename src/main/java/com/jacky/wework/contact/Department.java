@@ -18,76 +18,73 @@ import static io.restassured.RestAssured.*;
  */
 public class Department extends Contact {
 
+    //    public Response list(String id) {
+//
+//        Response response = requestSpecification
+//                .queryParam("id", id)
+//                .when()
+//                .get("https://qyapi.weixin.qq.com/cgi-bin/department/list")
+//                .then().log().all().extract().response();
+//        reset();
+//        return response;
+//    }
     public Response list(String id) {
-
-        Response response = requestSpecification
-                .queryParam("id", id)
-                .when()
-                .get("https://qyapi.weixin.qq.com/cgi-bin/department/list")
-                .then().log().all().extract().response();
         reset();
-        return response;
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("id", id);
+        return templateFromYaml("/api/list.yaml", map);
     }
 
+
     public Response create(String name, String parentid) {
-        reset();
-        String body = JsonPath.parse(this.getClass().getResourceAsStream("/data/create.json"))
-                .set("$.name", name)
-                .set("$.parentid", parentid).jsonString();
+        //让用例更清晰
+        HashMap<String, Object> hashMap = new HashMap<>();
+        hashMap.put("_file", "/data/create.json");
+        hashMap.put("name", name);
+        hashMap.put("parentid", parentid);
+        return templateFromYaml("/api/create.yaml", hashMap);
 
+        //读数据
+//        String body = template("/data/create.json", hashMap);
+//        hashMap.clear();
+//        hashMap.put("_body",body);
+//        return templateFromYaml("/api/create.yaml",hashMap);
 
-        return requestSpecification
-                .body(body).when()
-                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
-                .then().log().all().extract().response();
+//        return getDefaultRequestSpecification()
+//                .body(body).when()
+//                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
+//                .then().log().all().extract().response();
     }
 
     public Response create(HashMap<String, Object> map) {
-        reset();
-        DocumentContext documentContext = JsonPath.parse(this.getClass().getResourceAsStream("/data/create.json"));
-        map.entrySet().forEach(entry -> {
-            documentContext.set(entry.getKey(), entry.getValue());
-        });
-        return requestSpecification.body(documentContext.jsonString())
-                .when().post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
-                .then().extract().response();
+        map.put("_file", "/data/create.json");
+        return templateFromYaml("/api/create.yaml", map);
     }
 
     //用于个人使用的 创建部门方法
     public Response create1(String name, int parentid) {
-        reset();
-        String body = JsonPath.parse(this.getClass().getResourceAsStream("/data/create1.json"))
-                .set("$.name", name)
-                .set("$.parentid", parentid)
-                .jsonString();
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("_file", "/data/create.json");
+        map.put("name", name);
+        map.put("parentid", parentid);
 
-        return requestSpecification
-                .body(body).when()
-                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
-                .then().log().all().extract().response();
+        return templateFromYaml("/api/create.yaml", map);
     }
 
     public Response delete(int id) {
-        reset();
-        return requestSpecification
-                .param("id", id)
-                .when()
-                .get("https://qyapi.weixin.qq.com/cgi-bin/department/delete")
-                .then().log().all()
-                .statusCode(200)
-                .extract().response();
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("id",id);
+        return templateFromYaml("/api/delete.yaml",map);
     }
 
     public Response update(int id, int parentid) {
-        reset();
-        String body = JsonPath.parse(this.getClass().getResourceAsStream("/data/update.json"))
-                .set("$.id", id)
-                .set("$.parentid", parentid).jsonString();
 
-        return requestSpecification
-                .body(body).when()
-                .post("https://qyapi.weixin.qq.com/cgi-bin/department/update")
-                .then().log().all().extract().response();
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("_file", "/data/update.json");
+        map.put("id", id);
+        map.put("parentid", parentid);
+
+        return templateFromYaml("/api/update.yaml",map);
     }
 
     public Response update(HashMap<String, Object> map) {

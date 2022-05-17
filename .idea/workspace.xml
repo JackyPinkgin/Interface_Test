@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到101  27min  将requestSpecification变量变成getDefaultSF">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/api/create.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/api/delete.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/api/list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/api/update.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/create.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/create.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +29,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="TestNG Test Class" />
+        <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../m2/repository/junit/junit/4.13.1/junit-4.13.1.jar!/org/junit/AfterClass.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar!/org/hamcrest/Matchers.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +69,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
-    "last_opened_file_path": "D:/AllJavaProjects/posttoolcase1/posttoolcase",
+    "last_opened_file_path": "D:/AllJavaProjects/rest-assured-demo/src/main/resources/api",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -63,6 +80,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AllJavaProjects\rest-assured-demo\src\main\resources\api" />
       <recent name="D:\AllJavaProjects\rest-assured-demo\src\main\resources\data" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -77,64 +95,82 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WeworkConfigTest.getInstance">
-    <configuration name="TestRestassured.testFilterAddCookie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestRestassured" />
-      <option name="METHOD_NAME" value="testFilterAddCookie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRestassured.testtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestRestassured" />
-      <option name="METHOD_NAME" value="testtest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testcheck.testFilterAddCookie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Testcheck" />
-      <option name="METHOD_NAME" value="testFilterAddCookie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeworkConfigTest.getInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DepartmentTest.update">
+    <configuration name="DepartmentTest.create1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jacky.wework.*" />
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.WeworkConfigTest" />
-      <option name="METHOD_NAME" value="getInstance" />
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="create1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeworkConfigTest.load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentTest.creste1WithChinese" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jacky.wework.*" />
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.WeworkConfigTest" />
-      <option name="METHOD_NAME" value="load" />
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="creste1WithChinese" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentTest.deleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="deleteAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentTest.update2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jacky.wework.contact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
+      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
+      <option name="METHOD_NAME" value="update2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,20 +203,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.WeworkConfigTest.getInstance" />
-      <item itemvalue="JUnit.WeworkConfigTest.load" />
-      <item itemvalue="JUnit.TestRestassured.testFilterAddCookie" />
-      <item itemvalue="JUnit.TestRestassured.testtest" />
-      <item itemvalue="JUnit.Testcheck.testFilterAddCookie" />
+      <item itemvalue="JUnit.DepartmentTest.create1" />
+      <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
+      <item itemvalue="JUnit.DepartmentTest.deleteAll" />
+      <item itemvalue="JUnit.DepartmentTest.update" />
+      <item itemvalue="JUnit.DepartmentTest.update2" />
       <item itemvalue="Maven.rest-assured-demo test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WeworkConfigTest.getInstance" />
-        <item itemvalue="JUnit.WeworkConfigTest.load" />
-        <item itemvalue="JUnit.TestRestassured.testtest" />
-        <item itemvalue="JUnit.TestRestassured.testFilterAddCookie" />
-        <item itemvalue="JUnit.Testcheck.testFilterAddCookie" />
+        <item itemvalue="JUnit.DepartmentTest.update" />
+        <item itemvalue="JUnit.DepartmentTest.update2" />
+        <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
+        <item itemvalue="JUnit.DepartmentTest.deleteAll" />
+        <item itemvalue="JUnit.DepartmentTest.create1" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +367,19 @@
     <MESSAGE value="看到94的7min  把RequestSepcBuilder弄明白了" />
     <MESSAGE value="看到94的28min  初步明白了junit 4和5的区别，需要进一步了解junit怎么测试使用" />
     <MESSAGE value="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动" />
+    <MESSAGE value="100看完了" />
+    <MESSAGE value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
