@@ -94,7 +94,6 @@ public class Department extends Contact {
     }
 
     public Response deleteAll() {
-        reset();
         List<Integer> idList = list("").then().log().all().extract().path("department.id");
         System.out.println(idList);
         idList.forEach(id -> delete(id));

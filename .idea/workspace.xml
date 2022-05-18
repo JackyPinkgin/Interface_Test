@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到101  27min  将requestSpecification变量变成getDefaultSF">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Api.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/api/create.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/api/delete.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/api/list.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/api/update.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/ApiTest.java" afterDir="false" />
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到102  3min51s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/Restful.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/create.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/create.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jacky/wework/contact/DepartmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +83,7 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest.update">
+  <component name="RunManager" selected="JUnit.DepartmentTest.deleteAll">
     <configuration name="DepartmentTest.create1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
@@ -212,10 +200,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentTest.deleteAll" />
         <item itemvalue="JUnit.DepartmentTest.update" />
         <item itemvalue="JUnit.DepartmentTest.update2" />
         <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
-        <item itemvalue="JUnit.DepartmentTest.deleteAll" />
         <item itemvalue="JUnit.DepartmentTest.create1" />
       </list>
     </recent_temporary>
@@ -335,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652711938301</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="看到102  3min51s">
+      <created>1652789268396</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652789268396</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +364,8 @@
     <MESSAGE value="看到99的1H处。完成了在WeworkConfig启动时  动态读取yaml配置文件来启动" />
     <MESSAGE value="100看完了" />
     <MESSAGE value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
+    <MESSAGE value="看到102  3min51s" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到102  3min51s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
