@@ -16,8 +16,7 @@ public class TestGetToken {
 
     @Test
     public void testToken(){
-        Wework wework = new Wework();
-        String token = wework.getWeworkToken(WeworkConfig.getInstance().contactSecret);
+        String token = Wework.getWeworkToken(WeworkConfig.getInstance().contactSecret);
         assertThat(token,not(equalTo(null)));
     }
 

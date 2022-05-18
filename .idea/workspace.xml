@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到102  35min">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="接口自动化内容看完了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest">
+  <component name="RunManager" selected="JUnit.TestGetToken.testToken">
     <configuration name="DepartmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
@@ -95,22 +96,6 @@
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentTest.creste1WithChinese" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jacky.wework.contact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
-      <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="creste1WithChinese" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,6 +148,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGetToken.testToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGetToken" />
+      <option name="METHOD_NAME" value="testToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="rest-assured-demo test" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -191,19 +186,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.DepartmentTest" />
-      <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
       <item itemvalue="JUnit.DepartmentTest.deleteAll" />
       <item itemvalue="JUnit.DepartmentTest.update" />
       <item itemvalue="JUnit.DepartmentTest.update2" />
+      <item itemvalue="JUnit.TestGetToken.testToken" />
       <item itemvalue="Maven.rest-assured-demo test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGetToken.testToken" />
         <item itemvalue="JUnit.DepartmentTest.deleteAll" />
         <item itemvalue="JUnit.DepartmentTest" />
         <item itemvalue="JUnit.DepartmentTest.update" />
         <item itemvalue="JUnit.DepartmentTest.update2" />
-        <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652857743635</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="接口自动化内容看完了">
+      <created>1652865036540</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652865036540</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +374,8 @@
     <MESSAGE value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
     <MESSAGE value="看到102  3min51s" />
     <MESSAGE value="看到102  35min" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到102  35min" />
+    <MESSAGE value="接口自动化内容看完了" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口自动化内容看完了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

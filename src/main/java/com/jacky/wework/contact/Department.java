@@ -29,7 +29,6 @@ public class Department extends Contact {
 //        return response;
 //    }
     public Response list(String id) {
-        reset();
         HashMap<String, Object> map = new HashMap<>();
         map.put("id", id);
         return templateFromYaml("/api/list.yaml", map);
