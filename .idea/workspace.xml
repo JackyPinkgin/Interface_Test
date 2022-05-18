@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到102  3min51s">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="看到102  35min">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/WeworkConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +83,8 @@
       <recent name="com.jacky.wework.contact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTest.deleteAll">
-    <configuration name="DepartmentTest.create1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DepartmentTest">
+    <configuration name="DepartmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +94,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jacky.wework.contact" />
       <option name="MAIN_CLASS_NAME" value="com.jacky.wework.contact.DepartmentTest" />
-      <option name="METHOD_NAME" value="create1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,7 +190,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DepartmentTest.create1" />
+      <item itemvalue="JUnit.DepartmentTest" />
       <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
       <item itemvalue="JUnit.DepartmentTest.deleteAll" />
       <item itemvalue="JUnit.DepartmentTest.update" />
@@ -201,10 +200,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DepartmentTest.deleteAll" />
+        <item itemvalue="JUnit.DepartmentTest" />
         <item itemvalue="JUnit.DepartmentTest.update" />
         <item itemvalue="JUnit.DepartmentTest.update2" />
         <item itemvalue="JUnit.DepartmentTest.creste1WithChinese" />
-        <item itemvalue="JUnit.DepartmentTest.create1" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652789268396</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="看到102  35min">
+      <created>1652857743635</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652857743635</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +371,8 @@
     <MESSAGE value="100看完了" />
     <MESSAGE value="看到101  27min  将requestSpecification变量变成getDefaultSF" />
     <MESSAGE value="看到102  3min51s" />
-    <option name="LAST_COMMIT_MESSAGE" value="看到102  3min51s" />
+    <MESSAGE value="看到102  35min" />
+    <option name="LAST_COMMIT_MESSAGE" value="看到102  35min" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

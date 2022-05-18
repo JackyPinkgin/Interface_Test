@@ -11,10 +11,12 @@ import java.io.IOException;
  * @date 2022/4/25 18:35
  */
 public class WeworkConfig {
-    public String agentId = "1000005";
-    public String corpid = "wweee5d5707ac238a9";
-    public String contactSecret = "MSyVYmO_wzr2qCJwGKC2hRn8rjhdoRdBpianOihUg3w";
-
+//    public String agentId = "1000005";
+//    public String corpid = "wweee5d5707ac238a9";
+//    public String contactSecret = "MSyVYmO_wzr2qCJwGKC2hRn8rjhdoRdBpianOihUg3w";
+    public String agentId;
+    public String corpid;
+    public String contactSecret;
     private static WeworkConfig weworkConfig;
 
     public static WeworkConfig getInstance() {
@@ -34,16 +36,9 @@ public class WeworkConfig {
 //        ObjectMapper mapper = new ObjectMapper(new JsonFactory());
         try {
             return mapper.readValue(WeworkConfig.class.getResourceAsStream(path), WeworkConfig.class);
-
-//            System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(WeworkConfig.getInstance()));
-//            System.out.println("--------------");
-
-//            System.out.println(mapper.writeValueAsString(WeworkConfig.getInstance()));
-
         } catch (IOException e) {
             e.printStackTrace();
             return null;
         }
-
     }
 }
