@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="接口自动化内容看完了">
+    <list default="true" id="e31b526f-f106-4bd5-9e9f-b514d44b316d" name="Changes" comment="接口自动化内容看完了 完成基本优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jacky/wework/contact/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGetToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
-    "last_opened_file_path": "D:/AllJavaProjects/rest-assured-demo/src/main/resources/api",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "settings.editor.splitter.proportion": "0.3058104"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/AllJavaProjects/rest-assured-demo/src/main/resources/api&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.3058104&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AllJavaProjects\rest-assured-demo\src\main\resources\api" />
@@ -218,6 +217,7 @@
       <workItem from="1650897914238" duration="782000" />
       <workItem from="1650898916420" duration="3200000" />
       <workItem from="1651718773045" duration="47649000" />
+      <workItem from="1653014390148" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="单例配置">
       <created>1650883255065</created>
@@ -338,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652865036540</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="接口自动化内容看完了 完成基本优化">
+      <created>1652865337147</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652865337147</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +382,8 @@
     <MESSAGE value="看到102  3min51s" />
     <MESSAGE value="看到102  35min" />
     <MESSAGE value="接口自动化内容看完了" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口自动化内容看完了" />
+    <MESSAGE value="接口自动化内容看完了 完成基本优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口自动化内容看完了 完成基本优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

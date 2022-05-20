@@ -57,5 +57,19 @@ public class Testcheck {
         ;
     }
 
+    @Test
+    public void testJson(){
+        String json = "{\n" +
+                "\t\"caller\": \"ertongshibie\",\n" +
+                "\t\"sign\": \"suibian\",\n" +
+                "\t\"timestamp\": 1631526277,\n" +
+                "\t\"data\": {\n" +
+                "\t\t\"prediction\": \"adult\",\n" +
+                "\t\t\"score\": \"1\",\n" +
+                "\t\t\"fileId\": \"20210913/6e853960e2024cfeab3015fddb4952b1\"\n" +
+                "\t}\n" +
+                "}";
+    }
+
 
 }
