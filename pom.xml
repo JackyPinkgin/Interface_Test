@@ -46,7 +46,18 @@
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.13.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>5.0.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.10</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 
